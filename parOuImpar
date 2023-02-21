@@ -1,0 +1,17 @@
+algoritmo "ParOuImpar"
+var
+   n1, n2, impPar: inteiro
+inicio
+      Escreval("----- PAR OU IMPAR -----")
+      Escreval("divisão de dois valores")
+      Escreva("Fale um valor: ")
+      leia(n1)
+      Escreva("Fale outro valor: ")
+      leia(n2)
+      impPar <- n1 % n2
+      Se (impPar = 0) entao
+         Escreva("A divisão de ",n1," e ",n2," é PAR.")
+      Senao
+           Escreva("A divisão de ",n1," e ",n2," é IMPAR.")
+      Fimse
+fimalgoritmo
