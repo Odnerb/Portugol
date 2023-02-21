@@ -1,0 +1,13 @@
+algoritmo "viagemCreuza"
+var
+   totR, dolares, reais: real
+inicio
+      escreval("--------Viagem da Creuza--------")
+      escreva("Quanto tá custando US$ 1,00 dolar atualmente? R$ ")
+      leia(reais)
+      escreval("Quantos reais temos para passar as férias?")
+      leia(totR)
+      dolares <- totR / reais
+      escreval("Então precisamos comprar com R$ ", totR)
+      escreval("US$ ", dolares:4:2)
+fimalgoritmo
