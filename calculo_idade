@@ -1,0 +1,26 @@
+algoritmo "CalculoIdade"
+var
+   idade, ano, nasc: Inteiro
+inicio
+      Escreva("Em que ano estamos? ")
+      leia(ano)
+      Escreva("Em que ano você nasceu? ")
+      leia(nasc)
+      idade <- ano - nasc
+      Escreval("Sua idade é ", idade ," anos.")
+      Se (idade <= 13) entao
+         Escreva("Você ainda é uma criança. :)")
+      //Condicional composta
+      Senao ((idade > 13) e (idade <= 18))
+         Escreva("Você é um adolescente.")
+      Fimse
+      Se ((idade > 18) e (idade <= 29)) entao
+         Escreva("Você é um jovem.")
+      Fimse
+      Se ((idade > 29) e (idade <= 59)) entao
+         Escreva("Você é um Adulto.")
+      FimSe
+      Se (idade >= 60) entao
+         Escreva("Você é um idoso.")
+      FimSe
+fimalgoritmo
