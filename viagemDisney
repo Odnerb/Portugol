@@ -1,0 +1,19 @@
+algoritmo "viagemDisney"
+var
+   dinheiro: Real
+inicio
+      Escreva("Quanto você tem em dinheiro? R$")
+      leia(dinheiro)
+      //Condicional aninhada - Porquê são estruturas condicionais dentro
+      //da outra formando um ninho
+      Se (dinheiro >= 10000) entao
+         Escreva("Partiu Disney, aí vou eu!")
+      //Cria-se uma outra condicional composta dentro da outra condicional composta
+      Senao
+           Se (dinheiro >= 5000) e (dinheiro < 10000) entao
+              Escreva("Vou visitar meus parentes em Manaus")
+           Senao
+                Escreva("Vou ficar em casa assistindo Netflix")
+           FimSe
+      FimSe
+fimalgoritmo
