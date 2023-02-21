@@ -1,0 +1,24 @@
+algoritmo "mediaEscolar"
+var
+   n1, n2, media: real
+inicio
+      Escreval("---------------------")
+      Escreval("ESCOLA JAVALI CANSADO")
+      Escreval("---------------------")
+      Escreval("---------------------")
+      Escreva("Primeira nota: ")
+      leia(n1)
+      Escreva("Segunda nota: ")
+      leia(n2)
+      media <- (n1 + n2) / 2
+      //Condicional composta
+      Se (media >= 6) entao
+         Escreval("MEDIA: ", media)
+         Escreval("ALUNO APROVADO")
+         Escreva("---------------------")
+      SeNao
+           Escreval("MEDIA: ", media)
+           Escreval("ALUNO REPROVADO")
+           Escreva("---------------------")
+      FimSe
+fimalgoritmo
