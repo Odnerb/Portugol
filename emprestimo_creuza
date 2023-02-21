@@ -1,0 +1,14 @@
+algoritmo "emprestimoCreuza"
+var
+   emprestimo, jurosMontante, parcelas, parcelas_juros: real
+inicio
+      escreval("---------EMPRESTIMO DA CAIXA---------")
+      escreva("Quantos reais posso pegar de emprestimo? R$")
+      leia(emprestimo)
+      escreva("Quantas parcelas? x")
+      leia(parcelas)
+      jurosMontante <- (emprestimo * 0.20) + emprestimo
+      parcelas_juros <- ((emprestimo * 0.20) + emprestimo) / parcelas
+      escreval("Então terei que pagar R$", jurosMontante ," de um total de ", parcelas ," parcelas de R$", parcelas_juros)
+      escreval("com 20% de juros")
+fimalgoritmo
