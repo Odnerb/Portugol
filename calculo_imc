@@ -1,0 +1,18 @@
+algoritmo "imc"
+var
+   altura, massa, imc: real
+inicio
+      Escreval("Índice de Massa Corporal")
+      Escreval("------------------------")
+      Escreva("Qual a sua altura? (m)")
+      leia(altura)
+      Escreva("Qual seu peso? (Kg)")
+      leia(massa)
+      imc <- massa / (Exp(altura,2))
+      Escreval("IMC: ", imc:5:2)
+      Se (imc >= 18.5) e (imc <= 25) entao
+         Escreva("Peso normal")
+      Senao
+           Escreva("Você não está na faixa de peso normal")
+      FimSe
+fimalgoritmo
