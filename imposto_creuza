@@ -1,0 +1,9 @@
+algoritmo "ImpostoCreuza"
+var
+   imposto, preco: real
+inicio
+      escreva("Quanto custa o produto em dolares? US$")
+      leia(preco)
+      imposto <- ((preco * 60) / 100)
+      escreval("Você terá que pagar US$", imposto:4:2)
+fimalgoritmo
